@@ -1,0 +1,63 @@
+body{
+  margin: 0px;
+}
+
+header{
+  background-image: url('https://images.unsplash.com/photo-1533282960533-51328aa49826?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1842&q=80');
+  height: 400px;
+  background-position: center -100px;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 10px 50px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1{
+  margin: 0;
+  font-size: 70px;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.2s;
+}
+
+h1:hover{
+  text-shadow: 0px -5px 10px rgb(0, 0, 0);
+  margin-top: 5px;
+}
+
+.index-navbar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 0px;
+  list-style: none;
+}
+
+.index-navbar a{
+  background-color: rgba(255, 255, 255, 0.548);
+  width: 25vw;
+  height: 40px;
+  padding: 10px;
+  margin: 0px 5px 0px 5px;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 25px;
+  font-family: 'Cairo', sans-serif;
+  transition: all 0.22s;
+  box-shadow: none;
+  border:none;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.index-navbar a:hover{
+  border-radius: 15px 15px 0px 0px;
+  background-color: white;
+  font-size: 30px;
+  box-shadow: 0px -1px 15px white;
+  height: 50px;
+  width: 30vw;
+}
