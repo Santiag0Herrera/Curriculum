@@ -3,10 +3,12 @@ body{
 }
 
 header{
-  background-image: url('https://images.unsplash.com/photo-1533282960533-51328aa49826?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1842&q=80');
+  background-image: url("/img/foto1.jpg");
+  background-color: black;
+  background-position: top right;
+  background-size:contain;
+  background-repeat: no-repeat;
   height: 400px;
-  background-position: center -100px;
-  background-attachment: fixed;
   text-align: center;
   padding: 10px 50px 0px 50px;
   display: flex;
@@ -19,12 +21,14 @@ h1{
   font-size: 70px;
   font-family: 'Raleway', sans-serif;
   transition: all 0.2s;
+  color: white;
 }
 
 h1:hover{
-  text-shadow: 0px -5px 10px rgb(0, 0, 0);
-  margin-top: 5px;
+  text-shadow: 0px 0px 20px rgb(255, 0, 0);
 }
+
+/* radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%) */
 
 .index-navbar{
   display: flex;
@@ -47,7 +51,7 @@ h1:hover{
   border-radius: 10px 10px 0px 0px;
   font-size: 20px;
   font-family: 'Cairo', sans-serif;
-  transition: all 0.22s;
+  transition: all 0.22s, justify-content 1s;
   box-shadow: none;
   border: none;
   text-decoration: none;
@@ -61,19 +65,54 @@ h1:hover{
 
 .index-navbar a:hover{
   border-radius: 15px 15px 0px 0px;
-  background-color: white;
+  background-color: #ffffff;
+  color: black;
   font-size: 30px;
-  box-shadow: 0px -1px 15px white;
+  box-shadow: 0px 0px 20px #ffffff;
   height: 50px;
   width: 30vw;
+  text-shadow: 0px 0px 25px black;
 }
+
+.current-page {
+  display: flex !important;
+  background-color: #2a2a24 !important;
+  width: 25vw !important;
+  height: 40px !important;
+  padding: 10px !important;
+  margin: 0px 5px 0px 5px !important;
+  border-radius: 10px 10px 0px 0px !important;
+  font-size: 20px !important;
+  font-family: 'Cairo', sans-serif !important;
+  transition: all 0.22s !important;
+  box-shadow: none !important;
+  border: none !important;
+  text-decoration: none !important;
+  color: rgb(255, 255, 255) !important;
+  align-content: center !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex-wrap: nowrap !important;
+  flex-direction: row !important;
+  transition: all 0.22s !important;
+}
+
+.current-page:hover{
+  text-shadow: none !important;
+  background-color: #1c1c17 !important;
+}
+
+body{
+  background-color: #2a2a24;
+}
+
 
 footer{
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 100px;
-  background-color: #2a2a24;
+  background-color: #1c1c17;
 }
 
 .footer-icons{
