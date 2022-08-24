@@ -3,7 +3,7 @@ body{
 }
 
 header{
-  background-image: url("../img/foto1.jpg");
+  background-image: url("/foto1.jpg");
   background-color: black;
   background-position: top right;
   background-size:contain;
@@ -150,7 +150,7 @@ h3{
 }
 
 .card-left{
-  background-image: url("../img/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");
+  background-image: url("/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -162,7 +162,7 @@ h3{
 }
 
 .card-right{
-  background-image: url("../img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg");
+  background-image: url("/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
