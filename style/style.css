@@ -28,8 +28,6 @@ h1:hover{
   text-shadow: 0px 0px 20px rgb(255, 0, 0);
 }
 
-/* radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%) */
-
 .index-navbar{
   display: flex;
   flex-direction: row;
@@ -42,43 +40,65 @@ h1:hover{
 }
 
 .index-navbar a{
-  display: flex;
   background-color: rgba(255, 255, 255, 0.548);
-  width: 25vw;
-  height: 40px;
+  width: 25%;
+  height: 25%;
   padding: 10px;
   margin: 0px 5px 0px 5px;
   border-radius: 10px 10px 0px 0px;
   font-size: 20px;
   font-family: 'Cairo', sans-serif;
-  transition: all 0.22s, justify-content 1s;
+  transition: all 0.5s;
   box-shadow: none;
   border: none;
   text-decoration: none;
+  text-align: left;
   color: rgb(0, 0, 0);
-  align-content: center;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  box-sizing: border-box;
 }
 
 .index-navbar a:hover{
-  border-radius: 15px 15px 0px 0px;
-  background-color: #ffffff;
-  color: black;
-  font-size: 30px;
-  box-shadow: 0px 0px 20px #ffffff;
-  height: 50px;
-  width: 30vw;
-  text-shadow: 0px 0px 25px black;
+  padding-left: 15%;
+  padding-right: 0px;
+}
+
+.nav-item {
+  --width: 200px;
+  --timing: 2s;
+  border: 0;
+  font-weight: bold;
+  font-size: 1em;
+  background: rgb(64, 192, 87);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 3px;
+}
+
+.nav-item:hover {
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgb(250, 82, 82)), color-stop(16.65%, rgb(250, 82, 82)), color-stop(16.65%, rgb(190, 75, 219)), color-stop(33.3%, rgb(190, 75, 219)), color-stop(33.3%, rgb(76, 110, 245)), color-stop(49.95%, rgb(76, 110, 245)), color-stop(49.95%, rgb(64, 192, 87)), color-stop(66.6%, rgb(64, 192, 87)), color-stop(66.6%, rgb(250, 176, 5)), color-stop(83.25%, rgb(250, 176, 5)), color-stop(83.25%, rgb(253, 126, 20)), color-stop(100%, rgb(253, 126, 20)), to(rgb(250, 82, 82)));
+  background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+  -webkit-animation: var(--timing) linear dance6123 infinite;
+          animation: var(--timing) linear dance6123 infinite;
+}
+
+@-webkit-keyframes dance6123 {
+  to {
+    background-position: var(--width);
+  }
+}
+
+@keyframes dance6123 {
+  to {
+    background-position: var(--width);
+  }
 }
 
 .current-page {
   display: flex !important;
   background-color: #2a2a24 !important;
-  width: 25vw !important;
-  height: 40px !important;
+  width: 25%!important;
+  height: 25% !important;
   padding: 10px !important;
   margin: 0px 5px 0px 5px !important;
   border-radius: 10px 10px 0px 0px !important;
@@ -103,20 +123,106 @@ h1:hover{
 }
 
 body{
-  background-color: #2a2a24;
+  background: linear-gradient(135deg, #16161655 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #161616 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #16161655 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #161616 25%, #0b0b0b 25%) 0px 0/ 20px 20px;
 }
 
+main{
+  color: rgb(231, 231, 231);
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+h3{
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.card-left{
+  background-image: url("/img/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  margin: 20px 0px 20px 0px;
+  border-radius: 0px 100px 100px 0px;
+}
+
+.card-right{
+  background-image: url("/img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction:row-reverse;
+  align-items: center;
+  width: 90%;
+  border-radius: 100px 0px 0px 100px;
+  margin: 20px 0px 20px 0px;
+  align-self: flex-end;
+}
+
+.section-title-left{
+  padding: 10px 30px;
+  width: 50%;
+}
+
+.section-title-right{
+  padding: 10px 30px;
+  width: 50%;
+  text-align: right;
+}
+
+.section-paragraph-left{
+  color: white;
+  background-color: #2a2a249c;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  padding: 10px 60px 10px 20px;
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  border-radius: 0px 100px 100px 0px;
+}
+
+.section-paragraph-right{
+  color: white;
+  background-color: #2a2a249c;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px 10px 60px;
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  border-radius: 100px 0px 0px 100px;
+}
 
 footer{
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 100px;
   background-color: #1c1c17;
+  margin-top: 5%;
 }
 
 .footer-icons{
   display: flex;
+  margin: 0px;
   list-style: none;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -125,31 +231,25 @@ footer{
   align-items: center;
 }
 
+.footer-icons h3{
+  font-size: small;
+  font-family: 'Cairo', sans-serif;
+}
+
 .footer-icons a{
   display: flex;
   color: rgb(123, 122, 122);
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .footer-icons a:hover{
   color: rgb(255, 255, 255);
-}
-
-.footer-icons h3{
-  margin: 5px;
-  font-size: small;
-  font-family: 'Cairo', sans-serif;
-  transition: all 0.3s;
-}
-
-.footer-icons h3:hover{
-  margin: 2px;
   font-size: medium;
 }
