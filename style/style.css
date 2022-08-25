@@ -3,7 +3,7 @@ body{
 }
 
 header{
-  background-image: url("/foto1.jpg");
+  background-image: url("/img/foto1.jpg");
   background-color: black;
   background-position: top right;
   background-size:contain;
@@ -17,7 +17,7 @@ header{
 }
 
 h1{
-  margin: 0;
+  margin: 25px;
   font-size: 70px;
   font-family: 'Raleway', sans-serif;
   transition: all 0.2s;
@@ -25,7 +25,7 @@ h1{
 }
 
 h1:hover{
-  text-shadow: 0px 0px 20px rgb(255, 0, 0);
+  text-shadow: 0px 5px 10px rgb(255, 0, 0);
 }
 
 .index-navbar{
@@ -147,10 +147,11 @@ h3{
   font-size: 50px;
   color: rgb(255, 255, 255);
   text-shadow: 5px 5px 5px rgb(0, 0, 0);
+  margin: 0px;
 }
 
 .card-left{
-  background-image: url("/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");
+  background-image: url("/img/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -162,40 +163,40 @@ h3{
 }
 
 .card-right{
-  background-image: url("/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg");
+  background-image: url("/img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction:row-reverse;
   align-items: center;
   width: 90%;
+  padding: 0;
   border-radius: 100px 0px 0px 100px;
   margin: 20px 0px 20px 0px;
   align-self: flex-end;
 }
 
 .section-title-left{
-  padding: 10px 30px;
-  width: 50%;
+  padding: 0px 30px;
+  width: 40%;
 }
 
 .section-title-right{
   padding: 10px 30px;
-  width: 50%;
+  width: 40%;
   text-align: right;
 }
 
 .section-paragraph-left{
   color: white;
   background-color: #2a2a249c;
-  margin: 0px;
-  height: 100%;
   width: 100%;
   padding: 10px 60px 10px 20px;
   font-family: 'Cairo', sans-serif;
   text-align: center;
   backdrop-filter: blur(3px);
   border-radius: 0px 100px 100px 0px;
+  height: 100%;
 }
 
 .section-paragraph-right{
@@ -218,11 +219,17 @@ footer{
   height: 100px;
   background-color: #1c1c17;
   margin-top: 5%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-icons{
   display: flex;
-  margin: 0px;
+  width: 100%;
   list-style: none;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -234,11 +241,14 @@ footer{
 .footer-icons h3{
   font-size: small;
   font-family: 'Cairo', sans-serif;
+  color: rgb(123, 122, 122);
+  transition: all 0.2s;
+  margin: 7px;
 }
 
 .footer-icons a{
-  display: flex;
   color: rgb(123, 122, 122);
+  display: flex;
   margin: 20px 20px 0px 20px;
   align-items: center;
   justify-content: center;
@@ -251,5 +261,8 @@ footer{
 
 .footer-icons a:hover{
   color: rgb(255, 255, 255);
-  font-size: medium;
+}
+
+.footer-icons h3:hover{
+  color: rgb(255, 255, 255);
 }
