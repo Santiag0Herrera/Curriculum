@@ -3,7 +3,7 @@ body{
 }
 
 header{
-  background-image: url("/img/foto1.jpg");
+  background-image: url("https://user-images.githubusercontent.com/93556151/186930433-0d1c7a14-5f8e-4f81-912d-273f925fb432.jpg");
   background-color: black;
   background-position: top right;
   background-size:contain;
@@ -151,7 +151,7 @@ h3{
 }
 
 .card-left{
-  background-image: url("/img/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");
+  background-image: url("https://user-images.githubusercontent.com/93556151/186930595-aa9b2e78-ed32-4f9f-8568-24350f60fb60.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -163,7 +163,7 @@ h3{
 }
 
 .card-right{
-  background-image: url("/img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg");
+  background-image: url("https://user-images.githubusercontent.com/93556151/186930746-3454f7ca-5184-4ce6-9241-07465ad545bf.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
